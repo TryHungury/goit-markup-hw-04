@@ -74,6 +74,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
     --color-other: #ffffff;
     --color-alfa: #ffffff85;
     --color-border: #eeeeee;
+    --color-always-clients: #afb1b8;
     
     --color-background-primary: #e5e5e5;
     --color-background-secondary: #2f303a;
@@ -86,6 +87,21 @@ h1,h2,h3,h4,h5,h6,p,ul {
     --font-family-primary: 'Roboto', sans-serif;
     --font-family-secondary: 'Raleway', sans-serif;
 }
+
+/* Заховані заголовки */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+}
+
 /* Контейнер */
 .container {
     width: 1200px;
@@ -261,13 +277,11 @@ main {
 
 /* Ховер */
 .hero-button:hover {
-    opacity: 0.8;
+   background-color: #2196f399 ; 
+   /*  opacity: 0.8; */
 }
 
-/* Заховані заголовки
-.hidden-title {
-    opacity: 0;
-} */
+   
 
 /* Наші переваги */
 .subtitle {
@@ -300,6 +314,28 @@ main {
 }
 .width-list {
     width: 270px;
+}
+/* Айкони для переваг */
+.icons-our-benefits {
+    background-color: var(--color-background-third);
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    /* width: 16.875rem;
+    height: 7.5rem; */
+}
+.icon-benefits {
+    width: 4.375rem;
+    height: 4.375rem;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* padding: 5px 10px; */
+    /* margin: 0 auto;
+    margin: 25px 0px; */
+    /* text-align: center; */
+    /* justify-content: center; */
+}
+.flex-icon-benefits {
+    flex-direction: column;
 }
 
 /* Наша команда */
@@ -342,6 +378,33 @@ main {
 }
 .our-team-decorate {
     padding: 30px 0;
+}
+
+/* Постійні клієнти */
+.icon-clients {
+    justify-content: center;
+}
+.always-client-box {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* width: 170px;
+    height: 92px; */
+    padding: 16px 32px;
+    margin: 50px 15px;
+    border: 1px solid var(--color-always-clients);
+    border-radius: 4px;
+}
+.icon-always-client {
+    /* justify-content: center; */
+    width: 106px;
+    height: 60px;
+    fill: var(--color-always-clients);
+}
+.always-client-box:hover {
+    border: 1px solid var(--color-accent);
+}
+.always-client-box:hover .icon-always-client {
+    fill: var(--color-accent);
 }
 
 /* Секція наші пропозиції */
