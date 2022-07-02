@@ -216,7 +216,9 @@ a {
     fill: var(--color-secondary);
 }
 .data-list .link:hover .link-mail,
-.data-list .link:hover .link-tel {
+.data-list .link:hover .link-tel,
+.data-list .link:focus .link-mail,
+.data-list .link:focus .link-tel {
     fill: var(--color-accent);
 }
 
@@ -366,7 +368,7 @@ main {
     margin-bottom: 50px;
 }
 .section-our-team .flex-box{
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .our-team-box {
     background-color: var(--color-background-other);
@@ -378,6 +380,30 @@ main {
 }
 .our-team-decorate {
     padding: 30px 0;
+}
+.flex-box-icons {
+    display: flex;
+    justify-content: center;
+    /* margin: 0px 32px; */
+}
+.our-team-icon {
+
+}
+.our-team-links {
+    fill: var(--color-background-other);
+    /* stroke: var(--color-always-clients); */
+}
+.our-team-link-icons:hover .our-team-links,
+.our-team-links:focus .our-team-use-icon {
+    fill: var(--color-background-accent);
+}
+.our-team-link-icons {
+    width: 44px;
+    height: 44px;
+    margin: 5px;
+    margin-top: 16px;
+    justify-content: center;
+    /* fill: var(--color-always-clients); */
 }
 
 /* Постійні клієнти */
@@ -400,11 +426,14 @@ main {
     height: 60px;
     fill: var(--color-always-clients);
 }
-.always-client-box:hover {
-    border: 1px solid var(--color-accent);
-}
-.always-client-box:hover .icon-always-client {
+
+.link-clients-box:focus .icon-always-client,
+.link-clients-box:hover .icon-always-client {
     fill: var(--color-accent);
+}
+.link-clients-box:focus .always-client-box,
+.link-clients-box:hover .always-client-box {
+    border: 1px solid var(--color-accent);
 }
 
 /* Секція наші пропозиції */
@@ -487,6 +516,16 @@ main {
     background-color: var(--color-background-secondary);
     padding: 60px 0;
 }
+/* Заголовок футер */
+.footer-title {
+    color: var(--color-other);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
 
 /* Лого футер */
 .footer-page .logo-first-half {
@@ -498,6 +537,27 @@ main {
 .footer-page .logo {
     display: block;
     margin-bottom: 20px;
+}
+/* Футер приєднуйтеся */
+.footer-join{
+    display: flex;
+    flex-direction: column;
+    width: 206px;  
+    margin-top: 12px;
+    margin-left: 70px; 
+}
+.footer-flex-links {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-link-icon {
+    width: 44px;
+    height: 44px;
+    fill: rgba(255, 255, 255, 0.1);
+}
+.footer-link:hover .footer-link-icon,
+.footer-link:focus .footer-link-icon {
+    fill: var(--color-accent);
 }
 
 /* Адрес футер */
