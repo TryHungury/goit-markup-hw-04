@@ -89,7 +89,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
 }
 
 /* Заховані заголовки */
-.visually-hidden {
+/* .visually-hidden {
     position: absolute !important;
     width: 1px !important;
     height: 1px !important;
@@ -100,7 +100,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
     clip-path: inset(100%) !important;
     clip: rect(0 0 0 0) !important;
     overflow: hidden !important;
-}
+} */
 
 /* Контейнер */
 .container {
@@ -386,9 +386,9 @@ main {
     justify-content: center;
     /* margin: 0px 32px; */
 }
-.our-team-icon {
+/* .our-team-icon {
 
-}
+} */
 .our-team-links {
     fill: var(--color-background-other);
     /* stroke: var(--color-always-clients); */
