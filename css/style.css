@@ -320,15 +320,21 @@ main {
 }
 /* Айкони для переваг */
 .icons-our-benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
     background-color: var(--color-background-third);
-    padding: 25px 100px;
-    margin-bottom: 30px;
+    /* padding: 25px 100px;
+    margin-bottom: 30px; */
     /* width: 16.875rem;
     height: 7.5rem; */
 }
 .icon-benefits {
     width: 4.375rem;
     height: 4.375rem;
+    /* margin: auto 0; */
     /* display: flex; */
     /* flex-direction: column; */
     /* padding: 5px 10px; */
@@ -337,9 +343,9 @@ main {
     /* text-align: center; */
     /* justify-content: center; */
 }
-.flex-icon-benefits {
+/* .flex-icon-benefits {
     flex-direction: column;
-}
+} */
 
 /* Наша команда */
 .section-our-team {
@@ -369,7 +375,7 @@ main {
     margin-bottom: 50px;
 }
 .section-our-team .flex-box{
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .our-team-box {
     background-color: var(--color-background-other);
@@ -431,32 +437,48 @@ main {
 }
 
 /* Постійні клієнти */
+.title-main.always-clients {
+    margin-bottom: 50px;
+}
+.always-clients-list {
+    margin: 0 15px;
+}
 .icon-clients {
     justify-content: center;
 }
-.always-client-box {
+/* .always-client-box { */
     /* display: flex; */
     /* justify-content: center; */
     /* width: 170px;
     height: 92px; */
+    /* padding: 16px 32px; */
+    /* margin: 50px 15px; */
+    /* border: 1px solid var(--color-always-clients); */
+    /* border-radius: 4px; */
+/* } */
+.link-clients-box {
+    display: flex;
     padding: 16px 32px;
-    margin: 50px 15px;
     border: 1px solid var(--color-always-clients);
     border-radius: 4px;
 }
 .icon-always-client {
     /* justify-content: center; */
+    /* padding: 16px 32px;
+    border: 1px solid var(--color-always-clients);
+    border-radius: 4px; */
     width: 106px;
     height: 60px;
     fill: var(--color-always-clients);
+    /* margin: 50px 15px; */
 }
 
 .link-clients-box:focus .icon-always-client,
 .link-clients-box:hover .icon-always-client {
     fill: var(--color-accent);
 }
-.link-clients-box:focus .always-client-box,
-.link-clients-box:hover .always-client-box {
+.link-clients-box:focus,
+.link-clients-box:hover {
     border: 1px solid var(--color-accent);
 }
 
@@ -510,6 +532,14 @@ main {
     background-color: var(--color-background-other);
     border: 1px solid var(--color-border);
 }
+.portfolio-list-link:hover .link-hover,
+.portfolio-list-link:focus .link-focus{
+    box-shadow: 
+    0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .margin-portfolio-list {
     margin-bottom: 30px;
 }
